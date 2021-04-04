@@ -1,0 +1,33 @@
+/* GENERAL */
+
+
+@font-face
+{
+font-family:'Dancing Script','Comic sans MS', Arial, Helvetica, sans-serif;
+src:url(font/DancingScript-VariableFont_wght.ttf)
+
+
+body
+{
+background-color:white;
+color:black;
+}
+
+
+#header,
+#main,
+#footer-elements{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+
+/*commentaire
+.class
+#id
+*/
