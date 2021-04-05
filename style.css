@@ -3,20 +3,42 @@
 
 @font-face
 {
-font-family:'Dancing Script','Comic sans MS', Arial, Helvetica, sans-serif;
-src:url(font/DancingScript-VariableFont_wght.ttf)
+    font-family: 'ralewaythin';
+    src:url('Raleway-VariableFont_wght.ttf') format('truetype'),
+        url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+        url('font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-
-body
+@font-face
 {
-background-color:white;
-color:black;
+font-family:"Dancing Script";
+src:url(font/DancingScript-VariableFont_wght.ttf);
+}
+
+a
+{
+    text-decoration:none
+}
+
+li
+{
+list-style: none;    
 }
 
 
-#header,
-#main,
-#footer-elements{
+filter li:hover
+{
+    text-decoration: underline;  
+}
+
+
+
+
+header,
+main,
+footer{
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -24,6 +46,24 @@ color:black;
 .d-flex{
     display: flex;
 }
+
+
+body
+{
+    background-color:white ;
+    font-family: 'ralewaythin', "Dancing Script",'Trebuchet MS', Arial, sans-serif;
+    color: black;
+}
+
+
+/* HEADER */
+
+
+/* BODY */
+
+
+
+/* FOOTER */
 
 
 
