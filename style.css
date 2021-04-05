@@ -22,6 +22,12 @@ a
     text-decoration:none
 }
 
+
+nav ul
+{
+    padding:0;
+}
+
 li
 {
 list-style: none;    
@@ -59,7 +65,7 @@ body
 /* HEADER */
 
 
-/* BODY */
+/* MAIN */
 
 
 

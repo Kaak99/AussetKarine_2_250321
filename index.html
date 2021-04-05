@@ -14,9 +14,9 @@
 <body>
     <header>
         <div id="logo">
-            <img title="logo de reservia"  src="images\logo/Reservia.svg"/>
+            <img title="logo de reservia" alt="logo de Reservia" src="images\logo/Reservia.svg"/>
         </div>
-        <nav id="navigation">
+        <nav id="headerNav">
             <ul>
                 <li><a href=#hebergement>Hébergements</a></li>
                 <li><a href=#activiteMarseille>Activités</a></li>
@@ -32,16 +32,52 @@
         <section id="BANNER">
 
             <div id="headline">
+                <H1>Trouvez votre hébergement pour des vacances de rêve</H1>
+                <p>En plein centre ville ou en pleine nature</p>
             </div>
+
 
             <div id="search">
+                <img id="searchLogo" alt="" src="icone"/>
+                <form method="post" action="search.php">
+                    <input id=input type="search" name="townName" id="townName" size ="25" maxlength="50" value="Marseille, France"/>
+                    <input id=submit type="submit" value="send"/>
+                </form> 
             </div>
+
+            <!--            <div id="search">
+                <img src="icone"/>
+               <form method="post" action="search.php">
+                   <label id=label for="townName"><img src="icone"/></label>
+                   <input id=input type="search" name="townName" id="townName" size ="25" maxlength="50" value="Marseille, France"/>
+                   <input id=submit type="submit" value="send"/>
+               </form> 
+            </div>   -->
+
 
             <div id="filter">
+                <ul>
+                    <li><span id="titreFiltre"><H2>Filtres</H2></span></li>
+                    <li><img id=economyLogo src="icone"/>Économique</li>
+                    <li><img id=familyLogo src="icone"/>Familial</li>
+                    <li><img id=heartLogo src="icone"/>Romantique</li>
+                    <li><img id=animalLogo src="icone"/>Animaux autorisés</li>
+                </ul>
             </div>
 
-            <div id="info">
+           <div id="info">
+                <img id=infoLogo alt="" src="icone"/>
+                <div id=infoText>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </div>
+
+<!--
+            <div id="info">
+                <p><img src="icone"/>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+ -->
+
 
         </section>
 
@@ -49,18 +85,111 @@
         <section id="LODGING">
 
             <article id="townLodging">
-                <div id=thisTown>
+
+                <div id=thisTownTitle>
+                    <H2>Hébergements à Marseille</H2>
                 </div>
 
-                <div id=townMore>
-                    <a href="#toutAfficher.html">Afficher plus</a>
+                <div id=thisTownPictures>
+                <div id="thisTown-image1">
+                    <div id="thisTown_description1">
+                        <h3>Auberge La Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <p>4etoilesIcon</p>
+                    </div>
+                </div>
+                <div id="thisTown-image2">
+                    <div id="thisTown_description2">
+                        <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de 52€</p>
+                            <p>5etoilesIcon</p>
+                    </div>
+                </div>
+                <div id="thisTown-image3">
+                    <div id="thisTown_description3">
+                        <h3>Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de 76€</p>
+                            <p>4etoilesIcon</p>
+                    </div>
+                </div>
+                <div id="thisTown-image4">
+                    <div id="thisTown_description4">
+                        <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46€</p>
+                            <p>3etoilesIcon</p>
+                    </div>
+                </div>
+                <div id="thisTown-image5">
+                    <div id="thisTown_description5">
+                        <h3>Auberge Le panier</h3>
+                            <p>Nuits à partir de 23€</p>
+                            <p>4etoilesIcon</p>
+                    </div>
+                </div>
+                <div id="thisTown-image6">
+                    <div id="thisTown_description6">
+                        <h3>Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96€</p>
+                            <p>4etoilesIcon</p>
+                    </div>
+                </div>
+
+
+
+                <!-- 
+                <div id=thisTownPictures>
+                    <figure>
+                        <img class="photoHeb" alt="picture of Marseille" src="img/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
+                        <figcaption>
+                            <h3>Auberge LA Cannebière</h3>
+                            <p>Nuit à partir de <span class="prix">25€</span></p>
+                            <ul class=stars>
+                                <li><img src="starIconPlain"/></li>
+                                <li><img src="starIcon"/></li>
+                                <li><img src="starIcon"/></li>
+                                <li><img src="starIcon"/></li>
+                                <li><img src="starIcon"/></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                -->
+
+                <div id=thisTownMore>
+                    <a href="#toutAfficher.html"><H3>Afficher plus</H3></a>
                 </div>
 
             </article>
 
 
             <aside id="popLodging">
+                <div id="popLodgingTitle">
+                        <H2>Les plus populaires</H2>
+                </div>
+    
+                <div id="popLodgingRanking">
                 
+
+                    <div id="popLodgingRank1">
+                        <h3>Hôtel Le soleil du matin</h3>
+                        <p>Nuit à partir de 96€</p>
+                        <p>5etoilesIcon</p>
+                    </div>
+ 
+                    <div id="popLodgingRank2">
+                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p>Nuit à partir de 71€</p>
+                        <p>4etoilesIcon</p>
+                    </div>
+
+                    <div id="popLodgingRank3">
+                        <h3>Hôtel Tout bleu et blanc</h3>
+                        <p>Nuit à partir de 68€</p>
+                        <p>4etoilesIcon</p>
+                    </div>
+                
+                    
+                </div>
             </aside>
 
         </section>
@@ -68,20 +197,57 @@
 
         <section id="ACTIVITY">
 
-            <div id="actColumn1">
-            </div>
+            <div id="activityTitle"></div>
 
-            <div id="actColumn2">
-            </div>
+                <div id="activityPictures">
 
-            <div id="actColumn3">
-            </div>
+                    <div id="actColumn1">
+                        <div id="activityImage1">
+                             <div id="activity_description1">
+                              <h3>Vieux Port</h3>
+                            </div>
+                        </div>
+                    </div>
 
-            <div id="actColumn4">
-            </div>
+                    <div id="actColumn2">
+                        <div id="activityImage2">
+                            <div id="activity_description2">
+                                <h3>Fort de Poumègues</h3>
+                            </div>
+                        </div>
 
+                        <div id="activityImage3">
+                            <div id="activity_description3">
+                                <h3>Îles du Frioul</h3>
+                            </div>
+                        </div>
+                    </div>
+            
 
+                    <div id="actColumn3">
+                        <div id="activityImage4">
+                            <div id="activity_description4">
+                                <h3>Parc National des Calanques</h3>
+                            </div>
+                        </div>
+                    </div>
+            
 
+                    <div id="actColumn4">
+                        <div id="activityImage5">
+                            <div id="activity_description5">
+                             <h3>Hôtel du port</h3>
+                            </div>    
+                        </div>
+                    </div>
+                        <div id="activityImage6">
+                            <div id="activity_description6">
+                                <h3>Hôtel du port</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </section>
 
     </main>
@@ -90,23 +256,25 @@
         <!-------- FOOTER -------->
     <footer>
 
-        <nav>
+        <nav id=footerNav>
             <ul>
                 <li><a href=#>À propos</a></li>
                 <li><a href=#>Fonctionnement du site</a></li>
                 <li><a href=#>Conditions générales de vente</a></li>
                 <li><a href=#>Données et confidentialité</a></li>
             </ul>
-        </nav>
-        <nav>
-            <li><a href=#>Nos hébergements</a></li>
-            <li><a href=#>Charte qualité</a></li>
-            <li><a href=#>Soumettre votre hôtel</a></li>
-        </nav>
-        <nav>
-            <li><a href=#>Assistance</a></li>
-            <li><a href=#>Centre d'aide</a></li>
-            <li><a href=#>Nous contacter</a></li>
+        
+            <ul>
+                <li><a href=#>Nos hébergements</a></li>
+                <li><a href=#>Charte qualité</a></li>
+                <li><a href=#>Soumettre votre hôtel</a></li>
+            </ul>
+
+            <ul>
+                <li><a href=#>Assistance</a></li>
+                <li><a href=#>Centre d'aide</a></li>
+                <li><a href=#>Nous contacter</a></li>
+            </ul>
         </nav>
     </footer>
 
