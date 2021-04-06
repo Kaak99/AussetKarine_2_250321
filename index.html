@@ -6,20 +6,21 @@
     <meta charset="utf-8" />
     <title>Reservia : trouvez l'hébergement de vos rêves!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e8a7d66f52.js" crossorigin="anonymous"></script>
     <!-- Ceci est un commentaire -->
 </head>
 
     <!-------- BODY -------->
 
 <body>
-    <header>
+    <header class="d-flex">
         <div id="logo">
             <img title="logo de reservia" alt="logo de Reservia" src="images\logo/Reservia.svg"/>
         </div>
         <nav id="headerNav">
-            <ul>
-                <li><a href=#hebergement>Hébergements</a></li>
-                <li><a href=#activiteMarseille>Activités</a></li>
+            <ul class="d-flex">
+                <li><a href=#LODGING>Hébergements</a></li>
+                <li><a href=#ACTIVITY>Activités</a></li>
                 <li><a href=#inscription.html>S'inscrire</a></li>
             </ul>
         </nav>
@@ -37,11 +38,11 @@
             </div>
 
 
-            <div id="search">
-                <img id="searchLogo" alt="" src="icone"/>
-                <form method="post" action="search.php">
+            <div id="search" class="d-flex">
+                <img id="searchLogo" alt="" src="icon3020.png"/>
+                <form method="post" action="#search.php">
                     <input id=input type="search" name="townName" id="townName" size ="25" maxlength="50" value="Marseille, France"/>
-                    <input id=submit type="submit" value="send"/>
+                    <input id=submit type="submit" value="Rechercher"/>
                 </form> 
             </div>
 
@@ -56,23 +57,41 @@
 
 
             <div id="filter">
-                <ul>
+                <ul class="d-flex">
                     <li><span id="titreFiltre"><H2>Filtres</H2></span></li>
-                    <li><img id=economyLogo src="icone"/>Économique</li>
-                    <li><img id=familyLogo src="icone"/>Familial</li>
-                    <li><img id=heartLogo src="icone"/>Romantique</li>
-                    <li><img id=animalLogo src="icone"/>Animaux autorisés</li>
+                    <li class="filtreButton"><img id="economyLogo"  src="icon3020.png"/>Économique</li>
+                    <li class="filtreButton"><img id="familyLogo" src="icon3020.png"/>Familial</li>
+                    <li class="filtreButton"><img id="heartLogo" src="icon3020.png"/>Romantique</li>
+                    <li class="filtreButton"><img id="animalLogo" src="icon3020.png"/>Animaux autorisés</li>
                 </ul>
             </div>
 
-           <div id="info">
-                <img id=infoLogo alt="" src="icone"/>
-                <div id=infoText>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
+            <div id="info" class="d-flex">             
+                <i class="fas fa-info"></i><span id="infoText">Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
 
 <!--
+            <div id="info">             
+                <span class="fas fa-info">    Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
+
+            <div id="info" class="d-flex">             
+                <i class="fas fa-info"></i>  Plus de 500 logements sont disponibles dans cette ville
+            </div>
+
+
+            <div id="info" class="d-flex">             
+                <i class="far fa-question-circle"></i>Plus de 500 logements sont disponibles dans cette ville
+            </div>
+
+           <div id="info" class="d-flex">
+                <img id=infoLogo alt="" src="icon3020.png"/>
+                <div id=infoText>
+                    <i class="fas fa-star"></i>Plus de 500 logements sont disponibles dans cette ville
+                </div>
+            </div>
+
+
             <div id="info">
                 <p><img src="icone"/>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
@@ -82,7 +101,7 @@
         </section>
 
 
-        <section id="LODGING">
+        <section id="LODGING" class="d-flex">
 
             <article id="townLodging">
 
@@ -90,51 +109,57 @@
                     <H2>Hébergements à Marseille</H2>
                 </div>
 
-                <div id=thisTownPictures>
-                <div id="thisTown-image1">
-                    <div id="thisTown_description1">
-                        <h3>Auberge La Cannebière</h3>
+                <div id="thisTownPictures">
+
+                    <div id="thisTown-image1">
+                        <div id="thisTown_description1">
+                            <h3>Auberge La Cannebière</h3>
                             <p>Nuit à partir de 25€</p>
                             <p>4etoilesIcon</p>
+                            <!--<p>mon texte</p>-->
+                         </div>
                     </div>
-                </div>
-                <div id="thisTown-image2">
-                    <div id="thisTown_description2">
-                        <h3>Hôtel du port</h3>
+
+                    <div id="thisTown-image2">
+                        <div id="thisTown_description2">
+                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de 52€</p>
                             <p>5etoilesIcon</p>
+                        </div>
                     </div>
-                </div>
-                <div id="thisTown-image3">
-                    <div id="thisTown_description3">
-                        <h3>Hôtel Les mouettes</h3>
+                    <div id="thisTown-image3">
+                        <div id="thisTown_description3">
+                            <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de 76€</p>
                             <p>4etoilesIcon</p>
+                        </div>
                     </div>
-                </div>
-                <div id="thisTown-image4">
-                    <div id="thisTown_description4">
-                        <h3>Hôtel de la mer</h3>
+
+                    <div id="thisTown-image4">
+                        <div id="thisTown_description4">
+                            <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 46€</p>
                             <p>3etoilesIcon</p>
+                        </div>
                     </div>
-                </div>
-                <div id="thisTown-image5">
-                    <div id="thisTown_description5">
-                        <h3>Auberge Le panier</h3>
+
+                    <div id="thisTown-image5">
+                        <div id="thisTown_description5">
+                            <h3>Auberge Le panier</h3>
                             <p>Nuits à partir de 23€</p>
                             <p>4etoilesIcon</p>
+                        </div>
                     </div>
-                </div>
-                <div id="thisTown-image6">
-                    <div id="thisTown_description6">
-                        <h3>Hôtel chez Amina</h3>
+
+                    <div id="thisTown-image6">
+                        <div id="thisTown_description6">
+                            <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96€</p>
                             <p>4etoilesIcon</p>
+                        </div>
                     </div>
+
                 </div>
-
-
 
                 <!-- 
                 <div id=thisTownPictures>
@@ -197,7 +222,9 @@
 
         <section id="ACTIVITY">
 
-            <div id="activityTitle"></div>
+            <div id="activityTitle">
+                <h2>Activités à Marseille</h2>
+            </div>
 
                 <div id="activityPictures">
 
@@ -256,26 +283,26 @@
         <!-------- FOOTER -------->
     <footer>
 
-        <nav id=footerNav>
+        <div id=footerNav class="d-flex">
             <ul>
-                <li><a href=#>À propos</a></li>
-                <li><a href=#>Fonctionnement du site</a></li>
-                <li><a href=#>Conditions générales de vente</a></li>
-                <li><a href=#>Données et confidentialité</a></li>
+                <li></li><h3>À propos</h3></li>
+                <li><a href="#fonctionnementSite.html">Fonctionnement du site</a></li>
+                <li><a href="#CGV.html">Conditions générales de vente</a></li>
+                <li><a href="#confidentialite.html">Données et confidentialité</a></li>
             </ul>
         
             <ul>
-                <li><a href=#>Nos hébergements</a></li>
-                <li><a href=#>Charte qualité</a></li>
-                <li><a href=#>Soumettre votre hôtel</a></li>
+                <li><h3>Nos hébergements</h3></li>
+                <li><a href="#charteQualite.html">Charte qualité</a></li>
+                <li><a href="#soumettreHotel.html">Soumettre votre hôtel</a></li>
             </ul>
 
             <ul>
-                <li><a href=#>Assistance</a></li>
-                <li><a href=#>Centre d'aide</a></li>
-                <li><a href=#>Nous contacter</a></li>
+                <li><h3>Assistance</h3></li>
+                <li><a href="#centreDaide.html">Centre d'aide</a></li>
+                <li><a href="#nousContacter.html">Nous contacter</a></li>
             </ul>
-        </nav>
+        </div>
     </footer>
 
 

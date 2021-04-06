@@ -23,10 +23,7 @@ a
 }
 
 
-nav ul
-{
-    padding:0;
-}
+
 
 li
 {
@@ -40,37 +37,267 @@ filter li:hover
 }
 
 
-
-
-header,
-main,
-footer{
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 .d-flex{
     display: flex;
 }
 
+
+h1
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h3
+{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+p
+{
+    font-size: 0.8em;
+}
+
+
+
+
+
+/* BODY */
 
 body
 {
     background-color:white ;
     font-family: 'ralewaythin', "Dancing Script",'Trebuchet MS', Arial, sans-serif;
     color: black;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
+/*header,
+main,
+footer{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+*/
+
 
 
 /* HEADER */
 
+header
+{
+    justify-content: space-between;
+
+}
+
+header a
+{
+    color:#0065FC;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+#headerNav ul li
+{
+  margin-right: 80px;
+
+}
+
+.fa-info
+{
+    color: #0065FC;
+    padding: 2px 7px 2px 7px ; 
+    border-style:solid;
+    border-width: 1px;
+    border-color:#F2F2F2;
+    border-radius: 15px;
+    margin-right: 10px;
+    size: 3px;
+    
+}
+
+#info
+{
+    justify-content:flex-start;   
+    align-items: baseline;
+}
+
+/*
+
+
+.fa-info
+{
+color: #0065FC;
+padding: 0 5px 2px 5px;
+margin: 0 5px 0 5px;
+border-style: solid;
+border-color: navy;
+border-radius: 10px;
+justify-self: start;
+}
+*/
+
+
 
 /* MAIN */
+
+#BANNER
+{
+    padding-bottom: 20px;
+       
+}
+
+
+form #submit
+{
+    background-color:blue;
+    height: 40px;
+    color: #F2F2F2;  
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -10px;
+}
+
+form #input
+{
+    height: 40px; 
+    margin-right: 0px;
+}
+
+#searchLogo
+{
+    border-style:solid;
+    border-color: black;
+    background-color:#F2F2F2 ;
+    padding: 2px;
+}
+
+#filter ul
+{
+    padding-left:0;
+    width: 800px;
+    justify-content:space-between;
+}
+
+
+.filtreButton
+{
+    border-style:solid;
+    border-color: black;
+    background-color:#F2F2F2 ;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    border-radius: 20px;
+}
+
+
+
+
+#LODGING
+{
+padding-top: 20px;
+justify-content: space-between;
+    
+    
+}
+
+
+
+article, aside
+{
+background-color:lemonchiffon;
+padding:30px; 
+    
+}
+
+
+#thisTown-image1
+{
+    width: 180px;
+    height: 130px;
+    
+    border-style: double;
+    border-color: teal;
+    background: url("/images/marcus-loke-WQJvWU_HZFo-unsplash.jpg") no-repeat;
+    position: relative;
+    
+}
+
+#thisTown_description1
+{
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    text-align: start;
+    font-size: 0.6em;
+    
+}
+
+
+
+/*
+article
+{
+width: 600;  
+}
+
+aside
+{
+width: 400;  
+} */ 
+
+#ACTIVITY h2
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    
+    
+}
+
 
 
 
 /* FOOTER */
+#footerNav
+{
+    justify-content:flex-start;
+     
+}
 
+#footerNav ul
+{
+    width: 300px;
+    padding-left:0;
+
+}
+
+#footerNav h3
+{
+   
+    margin-bottom: 8px;
+}
+
+#footerNav ul li
+{
+    padding-bottom:5px;
+    
+}
 
 
 /*commentaire
