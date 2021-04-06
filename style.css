@@ -92,6 +92,7 @@ footer{
 
 /* HEADER */
 
+
 header
 {
     justify-content: space-between;
@@ -112,39 +113,6 @@ header a
 
 }
 
-.fa-info
-{
-    color: #0065FC;
-    padding: 2px 7px 2px 7px ; 
-    border-style:solid;
-    border-width: 1px;
-    border-color:#F2F2F2;
-    border-radius: 15px;
-    margin-right: 10px;
-    size: 3px;
-    
-}
-
-#info
-{
-    justify-content:flex-start;   
-    align-items: baseline;
-}
-
-/*
-
-
-.fa-info
-{
-color: #0065FC;
-padding: 0 5px 2px 5px;
-margin: 0 5px 0 5px;
-border-style: solid;
-border-color: navy;
-border-radius: 10px;
-justify-self: start;
-}
-*/
 
 
 
@@ -173,6 +141,39 @@ form #input
     margin-right: 0px;
 }
 
+
+.fa-map-marker-alt
+{
+color:black;
+background-color:#F2F2F2;
+align-self: center;
+padding: 11px;
+border-top-left-radius:  10px;
+border-bottom-left-radius:  10px;
+border-style: solid;
+border-width: 1px;
+border-color: #c6c6c6;
+
+}
+
+
+/*fonctionne mais pas couleur fond gris
+#searchLogo
+{
+	width: 1em;
+	height: 1em;
+    color: #0065FC;
+    padding: 11px ; 
+    border-style:solid;
+    border-width: 0.5px;
+    border-color:grey;
+    border-top-left-radius:  15px;
+    border-bottom-left-radius:  15px;
+  }
+*/
+
+
+/*
 #searchLogo
 {
     border-style:solid;
@@ -180,15 +181,82 @@ form #input
     background-color:#F2F2F2 ;
     padding: 2px;
 }
+*/
 
+form #input
+{
+    font-weight: bold;
+} 
+
+#filter
+{
+    font-weight: bold;
+    width: 700px;
+    height: auto;
+}
+
+.fa-ul
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.filterItems
+{
+    border-style: solid ;
+    border-color: aqua;
+    border-width: 1px;
+    border-radius: 10px ; 
+    margin-left:10px ; 
+    padding:0 10px 0 10px;
+    
+}
+
+#filterTitle
+{
+    border-style: none ;
+}
+
+
+.fa-li
+{
+
+
+border-style: solid ;
+border-color: aqua;
+border-width: 1px;
+border-radius: 10px ;
+background-color: gray;  
+padding:0 10px 0 10px; 
+
+ 
+}
+
+
+/*
+.filterTxt
+{
+ 
+    border-style: solid ;
+    border-color: aqua;
+    border-width: 1px;
+    border-radius: 10px ;
+   
+}
+*/
+
+
+
+/* maintenant on utilise fa-ul and fa-li
 #filter ul
 {
     padding-left:0;
     width: 800px;
     justify-content:space-between;
 }
-
-
+*/
+/*essai precedent avec  image
 .filtreButton
 {
     border-style:solid;
@@ -199,6 +267,77 @@ form #input
 
     border-radius: 20px;
 }
+*/
+
+.fa-info
+{
+color:#0065FC;
+font-size:0.6em ;
+
+align-self: center;
+padding: 2px 5px 2px 5px;
+border-radius:  10px;
+
+border-style: solid;
+border-width: 1px;
+margin-right: 6px;
+border-color: #F2F2F2;
+/*border-color: #c6c6c6;
+background-color:#F2F2F2;*/
+
+}
+
+/*arrive pas taille/align
+.fa-info
+{
+    color: #0065FC;
+    padding: 2px 7px 2px 7px ; 
+    border-style:solid;
+    border-width: 1px;
+    border-color:#F2F2F2;
+    border-radius: 15px;
+    margin-right: 10px;
+    size: 0.8em
+    
+}
+
+
+#info
+{
+    justify-content:flex-start;   
+    align-items: baseline;
+    size: 0.8em;
+}
+
+
+#info img
+{
+	width: 0.8em;
+	height: 0.8em;
+    color: #0065FC;
+    padding: 2px 2px 2px 2px ; 
+    border-style:solid;
+    border-width: 1px;
+    border-color:#F2F2F2;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+*/
+
+/*
+
+
+.fa-info
+{
+color: #0065FC;
+padding: 0 5px 2px 5px;
+margin: 0 5px 0 5px;
+border-style: solid;
+border-color: navy;
+border-radius: 10px;
+justify-self: start;
+}
+*/
 
 
 
