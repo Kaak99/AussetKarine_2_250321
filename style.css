@@ -361,7 +361,7 @@ padding:30px;
 border-radius: 20px;
 border-style: solid;
 border-color: indigo;
-flex: 2.5;
+flex: 2;
 margin-right: 40px;
 
 }
@@ -414,8 +414,8 @@ width: 400;
 
 #thisTownImage1, #thisTownImage2, #thisTownImage3, #thisTownImage4, #thisTownImage5, #thisTownImage6
 {
-    width: 240px;
-    height: 160px;
+    width: 225px;
+    height: 150px;
     border-style: double;
     border-color: teal;
     border-radius: 10px;
@@ -489,18 +489,137 @@ width: 400;
 }
 */
 
+/*<!--partie aside (hebergement volet droit : heb populaire)-->*/
+
+#popLodgingRank1, #popLodgingRank2, #popLodgingRank3
+{
+
+    background-color:teal;
+    padding: 8px;
+    border-radius: 15px;
+    margin:10px;
+    
+    
+}
+
+#imageRank1
+{
+    width: 120px;
+    height: 120px;
+    background-image:url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size:cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+#imageRank2
+{
+    width: 120px;
+    height: 120px;
+    background-image:url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-size:cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+#imageRank3
+{
+    width: 120px;
+    height: 120px;
+    background-image:url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-size:cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+#TextRank1, #TextRank2, #TextRank3
+{
+    width: 120px;
+    height: 120px;
+    padding-left: 15px;
+}
 
 
 
 
+
+/*<!--partie activity-->*/
 
 #ACTIVITY h2
 {
     font-size: 1.1em;
     font-weight: bold;
-    
+
     
 }
+
+#ACTIVITY, #activityTitle, #activityPictures
+{
+
+    border-style: double;
+    border-color: teal;  
+    
+}
+
+
+#activityPictures
+{
+    width: auto;
+    height: 400px;
+    justify-content: space-between;
+}
+
+#actColumn1
+{
+    border-style: double;
+    border-color:cornflowerblue; 
+}
+
+    #activityImage1
+{
+    width: 200px;
+    height: 300px;
+    background-image:url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size:cover;
+}
+
+
+#actColumn2
+{
+    border-style: double;
+    border-color:cornflowerblue; 
+
+
+}
+
+#actColumn3
+{
+    border-style: double;
+    border-color:cornflowerblue; 
+}
+
+#activityImage4
+{
+    width: 200px;
+    height: 300px;
+    background-image:url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size:cover;
+ }
+
+
+
+
+#actColumn4
+{
+    border-style: double;
+    border-color:cornflowerblue; 
+
+
+}
+
 
 
 
