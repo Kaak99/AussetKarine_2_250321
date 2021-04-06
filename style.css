@@ -109,7 +109,7 @@ header a
 
 #headerNav ul li
 {
-  margin-right: 80px;
+  margin-left: 100px;
 
 }
 
@@ -124,6 +124,8 @@ header a
        
 }
 
+#search, #filter
+{    margin-bottom: 50px;}
 
 form #submit
 {
@@ -133,6 +135,7 @@ form #submit
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-left: -10px;
+
 }
 
 form #input
@@ -340,26 +343,123 @@ justify-self: start;
 */
 
 
-
+/*-------------LODGING------------*/
 
 #LODGING
 {
 padding-top: 20px;
-justify-content: space-between;
+justify-content:space-around;
     
     
 }
 
 
-
-article, aside
+article
 {
 background-color:lemonchiffon;
 padding:30px; 
-    
+border-radius: 20px;
+border-style: solid;
+border-color: indigo;
+flex: 2.5;
+margin-right: 40px;
+
+}
+
+aside
+{
+background-color:lemonchiffon;
+padding:30px; 
+border-radius: 20px;
+border-style: solid;
+border-color: indigo;
+flex: 1;
+
+
+}
+
+/*
+article
+{
+width: 600;  
+}
+
+aside
+{
+width: 400;  
+} */ 
+
+
+
+#thisTownPictures
+{
+    border-style: solid;
+    border-color: greenyellow;
+    height: auto;
+
 }
 
 
+
+#thisTownLine1, #thisTownLine2
+{
+    border-style: solid;
+    border-color:lightslategray;
+    justify-content: space-around;
+    height: 180px;
+   
+}
+
+
+
+#thisTownImage1, #thisTownImage2, #thisTownImage3, #thisTownImage4, #thisTownImage5, #thisTownImage6
+{
+    width: 240px;
+    height: 160px;
+    border-style: double;
+    border-color: teal;
+    border-radius: 10px;
+
+    background: url("images/marcus-loke-WQJvWU_HZFo-unsplash.jpg") no-repeat;
+    background-size: contain;
+    position: relative;
+    
+
+}
+
+#thisTownDescription1, #thisTownDescription2, #thisTownDescription3, #thisTownDescription4, #thisTownDescription5, #thisTownDescription6
+{
+    position: absolute;
+    bottom: 0;
+    line-height:0.2em;
+    width: 100%;
+    height: 50px;
+    
+    
+    background-color: white;
+    color: black;
+    text-align:center;
+    font-size: 0.8em;
+
+    
+
+}
+
+
+
+
+#thisTownLine2
+{
+    border-style: solid;
+    border-color:indianred;
+    justify-content: space-around;
+
+}
+
+
+
+
+/*recommence tout
 #thisTown-image1
 {
     width: 180px;
@@ -387,19 +487,12 @@ padding:30px;
     font-size: 0.6em;
     
 }
+*/
 
 
 
-/*
-article
-{
-width: 600;  
-}
 
-aside
-{
-width: 400;  
-} */ 
+
 
 #ACTIVITY h2
 {
