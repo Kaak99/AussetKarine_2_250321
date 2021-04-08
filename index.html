@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-    <!-------- HEAD -------->
+<!---------------------------- HEAD ---------------------------->
+
 <head>
     <meta charset="utf-8" />
     <title>Reservia : trouvez l'hébergement de vos rêves!</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e8a7d66f52.js" crossorigin="anonymous"></script>
-    <!-- Ceci est un commentaire -->
-</head>
+ </head>
 
-    <!-------- BODY -------->
+<!---------------------------- BODY ---------------------------->
 
 <body>
+    <!----------------HEADER---------------->
     <header class="d-flex">
         <div id="logo">
-            <img title="logo de reservia" alt="logo de Reservia" src="images\logo/Reservia.svg"/>
+            <img title="logo de reservia" alt="logo de Reservia" src="images/logo/Reservia.svg"/>
         </div>
         <nav id="headerNav">
             <ul class="d-flex">
@@ -27,9 +28,9 @@
 
     </header>
 
-
+    <!----------------MAIN---------------->
     <main>
-
+        
         <section id="BANNER">
 
             <div id="headline">
@@ -45,70 +46,16 @@
                 </form> 
             </div>
 
-<!--fonctionne mais pas couleur fond gris
-            <div id="search" class="d-flex">
-                <img id="searchLogo" alt="" src="icon/map-marker-alt.svg"/>
-                <form method="post" action="#search.php">
-                    <input id=input type="search" name="townName" id="townName" size ="25" maxlength="50" value="Marseille, France"/>
-                    <input id=submit type="submit" value="Rechercher"/>
-                </form> 
-            </div>
--->            
-<!--
-            <div id="search" class="d-flex">
-                <img id="searchLogo" alt="" src="icon/3020.png"/>
-                <form method="post" action="#search.php">
-                    <input id=input type="search" name="townName" id="townName" size ="25" maxlength="50" value="Marseille, France"/>
-                    <input id=submit type="submit" value="Rechercher"/>
-                </form> 
+            <div id="filter" class="d-flex">
+                <h2>Filtres</h2>
+            	<ul class="fa-ul">
+	                <li class="filterItems"><i class="fas fa-money-bill-wave"></i><span class="filterTxt">Économique</span></li>
+	                <li class="filterItems"><i class="fas fa-child"></i><span class="filterTxt">Familial</span></li>
+	                <li class="filterItems"><i class="fas fa-heart"></i><span class="filterTxt">Romantique</span></li>
+	                <li class="filterItems"><i class="fas fa-dog"></i><span class="filterTxt">Animaux autorisés</span></li>
+              	</ul>
             </div>
 
-                        <div id="search">
-                <img src="icone"/>
-               <form method="post" action="search.php">
-                   <label id=label for="townName"><img src="icone"/></label>
-                   <input id=input type="search" name="townName" id="townName" size ="25" maxlength="50" value="Marseille, France"/>
-                   <input id=submit type="submit" value="send"/>
-               </form> 
-            </div>   -->
-
-
-
-            <div id="filter">
-
-            <ul class="fa-ul">
-                <li class="filterItems"><span class="fa-li" id="filterTitle">Filtres</span></li>
-                <li class="filterItems"><span class="fa-li"><i class="fas fa-money-bill-wave"></i></span><span class="filterTxt">Économique</span></li>
-                <li class="filterItems"><span class="fa-li"><i class="fas fa-child"></i></span><span class="filterTxt"></span>Familial</span></li>
-                <li class="filterItems"><span class="fa-li"><i class="fas fa-heart"></i></span><span class="filterTxt"></span>Romantique</span></li>
-                <li class="filterItems"><span class="fa-li"><i class="fas fa-dog"></i></span><span class="filterTxt"></span>Animaux autorisés</span></li>
-              </ul>
-            </div>
-
-<!--            <div id="filter">
-                <ul class="d-flex">
-                    <li><span id="titreFiltre"><H2>Filtres</H2></span></li>
-                    <li class="filtreButton"><i class="fas fa-money-bill-wave"></i>Économique</li>
-                    <li class="filtreButton"><i class="fas fa-child"></i>Familial</li>
-                    <li class="filtreButton"><i class="fas fa-heart"></i>Romantique</li>
-                    <li class="filtreButton"><i class="fas fa-dog"></i>Animaux autorisés</li>
-                </ul>
-            </div>
-
-
-                <div id="filter">
-                <ul class="d-flex">
-                    <li><span id="titreFiltre"><H2>Filtres</H2></span></li>
-                    <li class="filtreButton"><img id="economyLogo"  src="icon3020.png"/>Économique</li>
-                    <li class="filtreButton"><img id="familyLogo" src="icon3020.png"/>Familial</li>
-                    <li class="filtreButton"><img id="heartLogo" src="icon3020.png"/>Romantique</li>
-                    <li class="filtreButton"><img id="animalLogo" src="icon3020.png"/>Animaux autorisés</li>
-                </ul>
-            </div>
--->
-
-
-            
 
             <div id="info" class="d-flex">
                 <i class="fas fa-info"></i>
@@ -406,7 +353,7 @@ ici image
     </main>
 
 
-        <!-------- FOOTER -------->
+        <!---------------------------- FOOTER ---------------------------->
     <footer>
 
         <div id=footerNav class="d-flex">

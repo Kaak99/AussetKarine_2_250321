@@ -1,147 +1,126 @@
 /* GENERAL */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-@font-face
+/*
+*
 {
-    font-family: 'ralewaythin';
-    src:url('Raleway-VariableFont_wght.ttf') format('truetype'),
-        url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-        url('font/raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-@font-face
-{
-font-family:"Dancing Script";
-src:url(font/DancingScript-VariableFont_wght.ttf);
-}
+*/
 
 a
 {
     text-decoration:none
 }
 
-
-
-
 li
 {
 list-style: none;    
 }
 
-
-filter li:hover
-{
-    text-decoration: underline;  
-}
-
-
 .d-flex{
     display: flex;
 }
 
-
 h1
 {
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 h2
 {
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 h3
 {
-    font-size: 0.9em;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: 700;
 }
 
 p
 {
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-weight: 400;
 }
 
 
 
 
 
-/* BODY */
+/* <!---------------------------- BODY ----------------------------> */
 
 body
 {
     background-color:white ;
-    font-family: 'ralewaythin', "Dancing Script",'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: black;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-/*header,
-main,
-footer{
-    max-width: 1400px;
-    margin: 0 auto;
-}
-*/
 
 
 
-/* HEADER */
+
+/* <!----------------HEADER----------------> */
 
 
 header
 {
+    margin: 40px 0 30px 0;
     justify-content: space-between;
-
 }
 
-header a
+#headerNav
+{
+    width: 350px;
+}
+
+#headerNav ul{
+    justify-content: space-between;
+    padding: 0;
+}
+
+#headerNav li a
+{
+    font-size: 0.8em;
+    font-weight: 400;
+    color:#0065FC;
+}
+
+#headerNav li:nth-child(2) a
+{
+    color:#000;
+}
+
+#headerNav li:nth-child(3) a
+{
+   font-weight: 700;
+}
+
+#headerNav li a:hover
 {
     color:#0065FC;
-    font-size: 0.8em;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 
-#headerNav ul li
-{
-  margin-left: 100px;
-
-}
-
-
-
-
-/* MAIN */
+/* <!----------------MAIN----------------> */
 
 #BANNER
 {
-    padding-bottom: 20px;
-       
+    
 }
 
 #search, #filter
-{    margin-bottom: 50px;}
-
-form #submit
 {
-    background-color:blue;
-    height: 40px;
-    color: #F2F2F2;  
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-left: -10px;
-
-}
-
-form #input
-{
-    height: 40px; 
-    margin-right: 0px;
+    margin-bottom: 10px;
 }
 
 
@@ -150,52 +129,46 @@ form #input
 color:black;
 background-color:#F2F2F2;
 align-self: center;
-padding: 11px;
+padding: 12px;
 border-top-left-radius:  10px;
 border-bottom-left-radius:  10px;
-border-style: solid;
-border-width: 1px;
-border-color: #c6c6c6;
-
+border-style:none;
 }
-
-
-/*fonctionne mais pas couleur fond gris
-#searchLogo
-{
-	width: 1em;
-	height: 1em;
-    color: #0065FC;
-    padding: 11px ; 
-    border-style:solid;
-    border-width: 0.5px;
-    border-color:grey;
-    border-top-left-radius:  15px;
-    border-bottom-left-radius:  15px;
-  }
-*/
-
-
-/*
-#searchLogo
-{
-    border-style:solid;
-    border-color: black;
-    background-color:#F2F2F2 ;
-    padding: 2px;
-}
-*/
 
 form #input
 {
-    font-weight: bold;
-} 
+    height: 40px; 
+    margin-right: 0px;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #F2F2F2;
+    padding-left: 10px;
+}
+
+form #submit
+{
+    background-color:#0065FC;
+    height: 40px;
+    color: #F2F2F2;  
+    border-style: solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -10px;
+}
+
 
 #filter
 {
-    font-weight: bold;
-    width: 700px;
+
+    font-weight: 700;
+    width: 900px;
     height: auto;
+    align-items: center;
+}
+
+filter li:hover
+{
+    text-decoration: underline;  
 }
 
 .fa-ul
@@ -205,72 +178,26 @@ form #input
 
 }
 
-.filterItems
-{
-    border-style: solid ;
-    border-color: aqua;
-    border-width: 1px;
-    border-radius: 10px ; 
-    margin-left:10px ; 
-    padding:0 10px 0 10px;
-    
+.filterItems i{
+    padding: 12px 10px;
+    background-color: #F2F2F2;
+    color:#0065FC;
+    border-radius: 50%;
+    height: 18px;
+    width: 21px;
+    text-align: center;
 }
 
-#filterTitle
-{
-    border-style: none ;
+.filterTxt{
+    border: 1px solid #F2F2F2;
+    padding: 10px 10px 11px 24px;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -17px;
+    margin-right: 17px;
 }
 
-
-.fa-li
-{
-
-
-border-style: solid ;
-border-color: aqua;
-border-width: 1px;
-border-radius: 10px ;
-background-color: gray;  
-padding:0 10px 0 10px; 
-
- 
-}
-
-
-/*
-.filterTxt
-{
- 
-    border-style: solid ;
-    border-color: aqua;
-    border-width: 1px;
-    border-radius: 10px ;
-   
-}
-*/
-
-
-
-/* maintenant on utilise fa-ul and fa-li
-#filter ul
-{
-    padding-left:0;
-    width: 800px;
-    justify-content:space-between;
-}
-*/
-/*essai precedent avec  image
-.filtreButton
-{
-    border-style:solid;
-    border-color: black;
-    background-color:#F2F2F2 ;
-    padding-left: 5px;
-    padding-right: 5px;
-
-    border-radius: 20px;
-}
-*/
 
 .fa-info
 {
@@ -278,69 +205,20 @@ color:#0065FC;
 font-size:0.6em ;
 
 align-self: center;
-padding: 2px 5px 2px 5px;
-border-radius:  10px;
+padding: 4px 7px;
+border-radius:  20px;
 
 border-style: solid;
 border-width: 1px;
 margin-right: 6px;
 border-color: #F2F2F2;
-/*border-color: #c6c6c6;
-background-color:#F2F2F2;*/
+
 
 }
 
-/*arrive pas taille/align
-.fa-info
-{
-    color: #0065FC;
-    padding: 2px 7px 2px 7px ; 
-    border-style:solid;
-    border-width: 1px;
-    border-color:#F2F2F2;
-    border-radius: 15px;
-    margin-right: 10px;
-    size: 0.8em
-    
-}
 
 
-#info
-{
-    justify-content:flex-start;   
-    align-items: baseline;
-    size: 0.8em;
-}
 
-
-#info img
-{
-	width: 0.8em;
-	height: 0.8em;
-    color: #0065FC;
-    padding: 2px 2px 2px 2px ; 
-    border-style:solid;
-    border-width: 1px;
-    border-color:#F2F2F2;
-    border-radius: 15px;
-    margin-right: 10px;
-}
-*/
-
-/*
-
-
-.fa-info
-{
-color: #0065FC;
-padding: 0 5px 2px 5px;
-margin: 0 5px 0 5px;
-border-style: solid;
-border-color: navy;
-border-radius: 10px;
-justify-self: start;
-}
-*/
 
 
 /*-------------LODGING------------*/
@@ -551,7 +429,7 @@ width: 400;
 #ACTIVITY h2
 {
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 700;
 
     
 }
