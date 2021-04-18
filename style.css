@@ -123,13 +123,13 @@ header{
 /*<!--headline-->*/
 /*<!--search-->*/
 .fa-map-marker-alt{
-color:black;
-background-color:#F2F2F2;
-align-self: center;
-padding: 12px;
-border-top-left-radius:  10px;
-border-bottom-left-radius:  10px;
-border-style:none;
+    color:black;
+    background-color:#F2F2F2;
+    align-self: center;
+    padding: 12px;
+    border-top-left-radius:  10px;
+    border-bottom-left-radius:  10px;
+    border-style:none;
 }
 
 form #input{
@@ -154,13 +154,11 @@ form #submit{
 /*<!--filter-->*/
 
 #filter{
-
     font-weight: 700;
     width: 900px;
     height: auto;
     align-items: center;
 }
-
 
 
 .fa-ul{
@@ -196,48 +194,69 @@ form #submit{
 
 /*<!--info-->*/
 .fa-info{
-color:#0065FC;
-font-size:0.6em ;
-align-self: center;
-padding: 4px 7px;
-border-radius:  20px;
-border-style: solid;
-border-width: 1px;
-margin-right: 6px;
-border-color: #F2F2F2;
+    color:#0065FC;
+    font-size:0.6em ;
+    align-self: center;
+    padding: 4px 7px;
+    border-radius:  20px;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 6px;
+    border-color: #F2F2F2;
 }
 
 
 
 /*<!-- LODGING section (lodging inThisTown + top3 lodging)-->*/
+
 #LODGING{
-    max-width: 1400px;
-  
-    height: 650px;
-    padding-top: 20px;
-    border:solid 1px black ;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article{
+    width: 70%;
+    background-color:#F2F2F2;
+    padding:0; 
+    margin: 0;
+    border-radius: 20px;
+}
+        
+aside{
+    width: 28%;
+    background-color:#F2F2F2;
+    padding:0; 
+    margin: 0;
+    border-radius: 20px;
+}
+        
+
+/*<!--article(left): lodging in this town-->*/
+
+#thisTownTitle{
+    height: 20px;
+    margin: 30px 0 0 50px;
     }
 
-#thisTownLodging, #popLodging{
-    background-color:rgb(184, 182, 182);
-    border:solid 1px rgb(63, 50, 50) ;
-    border-radius: 25px;
+#thisTownPictures{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:0; 
+    margin: 0;
     }
 
-
-    /*figure de gauche (lthisTownLodging)*/
 .thisTownFigure{
     background-color: white;
     width: 252px;
     padding:6px 6px 0 6px;
     border-radius: 25px;
-    margin-left: 20px;
+    margin:20px 0 20px 0;
     box-shadow: 1px 2px 10px #3f3f3f;
     }
-      
+       
 .thisTownImage{   /*750x500*/
-    border:dotted 1px rgb(126, 24, 29);
-    width: 250px;
+    width: 252px;
     height: 130px;
     object-fit:cover;
     border-top-left-radius: 20px;
@@ -250,191 +269,70 @@ border-color: #F2F2F2;
     padding-left:10px;
     }
             
-    .fa-star{
-        color:#0065FC;
-        font-size: 0.8em;
-    }
-    
-    .greystar{
-        color:#F2F2F2;
-    }
-    
-    #thisTownMore{
-        margin-left: 40px;
-    }
-
-    /*figure de droite (popLodging)*/
-            
-    .popLodgingFigure{
-    background-color: white;
-    width: 330px;
-    padding:6px 0px 6px 6px;
-    border-radius: 25px;
-    display: flex;
-    margin-left: 20px;
-    margin-top: 20px;
-    box-shadow: 1px 2px 10px #3f3f3f;
-    }  
-
-    .popLodgingImage{   /*532x355*/
-    border:dotted 1px rgb(126, 24, 29);
-    width: 125px;
-    height: 140px;
-    object-fit:cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    }
-
-    .popLodgingText{
-    /*width: 300px;
-    height: 74px;*/
-    line-height: 1.4em;
-    padding: 5px 0 0px 30px;
-    }
-
-    article{
-        background-color:lemonchiffon;
-        padding:0; 
-        border-radius: 20px;
-        border-style: solid;
-        border-color: indigo;
-        flex: 2;
-        margin-right: 40px;
-        }
-        
-        aside{
-        background-color:lemonchiffon;
-        padding:0; 
-        border-radius: 20px;
-        border-style: solid;
-        border-color: indigo;
-        flex: 1;
-        }
-        
-        #thisTownTitle{
-            margin-top: 30px;
-            margin-left: 50px;
-        }
-        #thisTownMore{
-            margin-left: 40px;
-            margin-bottom: 50px;
-        }
-        
-        #popLodging{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
-        
-        #popLodgingTitle{
-            justify-content: space-around;
-            align-items:center;
-            margin-top: 0px;
-            
-        }
-        
-        #popLodgingRanking{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin-top: 0px;
-        }
-
-/*debut
-#LODGING{
-max-width: 1400px;
-padding-top: 20px;
-justify-content:space-between;
-}
-
-article{
-background-color:lemonchiffon;
-padding:0; 
-border-radius: 20px;
-border-style: solid;
-border-color: indigo;
-flex: 2;
-margin-right: 40px;
-}
-
-aside{
-background-color:lemonchiffon;
-padding:0; 
-border-radius: 20px;
-border-style: solid;
-border-color: indigo;
-flex: 1;
-}
-
-#thisTownTitle{
-    margin-top: 30px;
-    margin-left: 50px;
-}
-
-#LODGING figure{
-    background-color:#669966;
-    padding:7px;
-    border-radius: 25px;
-    box-shadow: 2px 6px 6px #1b1b1b;
-}
-
-#thisTownPictures img{
-	width: 225px;
-	height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#thisTownPictures figcaption{
-    line-height:0.3em;
-    padding-left: 10px;
-    padding-bottom: 8px;
-}
-
 .fa-star{
     color:#0065FC;
     font-size: 0.8em;
 }
-
+    
 .greystar{
     color:#F2F2F2;
+    font-size: 0.8em;
 }
-
+    
 #thisTownMore{
-    margin-left: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
-#popLodging{
-    display: flex;
+
+/*<!--aside (right): poulaire lodging in this town top3-->*/
+     
+#popLodgingTitle{
+    height: 20px;
+    margin: 30px 0 0 25px;
+    position: relative;
+}
+        
+.fa-chart-line{
+    font-size: 1.2em;
+    position: absolute;
+    top: 2px;
+    right: 40px;
+}
+
+#popLodgingRanking{
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-#popLodgingTitle{
-    justify-content: space-around;
-    align-items:center;
-    margin-top: -40px;
-}
+.popLodgingFigure{
+    background-color: white;
+    width: 330px;
+    padding:6px 0px 6px 6px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 10px #3f3f3f;
+}  
 
-#popLodgingRanking{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: -40px;}
-
-#popLodging img{
-    flex: 1;
-    background-size: 100px 100px;
-	width: 130px;
-	height: 130px;
+.popLodgingImage{   /*532x355*/
+    width: 126px;
+    height: 141px;
+    object-fit:cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-#popLodging figcaption{
-flex: 2;
+.popLodgingText{
+    /*width: 300px;
+    height: 74px;*/
+    line-height: 1.4em;
+    padding: 5px 0 0px 30px;
 }
-fin*/
+
+   
+
+    
 
 /*<!----- ACTIVITY section (activity inThisTown)----->*/
 
