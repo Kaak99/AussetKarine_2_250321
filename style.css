@@ -62,7 +62,7 @@ header{
 }
 
 #logo{
-    align-self: flex-end;
+    align-self:flex-end;
 }
 
 #headerNav{
@@ -158,13 +158,14 @@ form #submit{
     width: 900px;
     height: auto;
     align-items: center;
+    /*flex-wrap: wrap; /*wrap on for filters*/
 }
 
 
 .fa-ul{
     display: flex;
     justify-content: space-between;
-
+    /*flex-wrap: wrap; /*wrap on for filer ul*/
 }
 
 .filterItems i{
@@ -231,6 +232,7 @@ aside{
     border-radius: 20px;
 }
         
+
 
 /*<!--article(left): lodging in this town-->*/
 
@@ -341,10 +343,11 @@ aside{
 }
 
 #activityPictures{
-    width: 1400px;
+    width: 100%;
     justify-content: space-between;
     padding:0;
     margin: 0;
+    /*flex-wrap: wrap; /*wrap on for activityPictures*/
 }
 
 #actColumn1 figure, #actColumn2 figure, #actColumn3 figure, #actColumn4 figure{
@@ -413,4 +416,367 @@ div#actColumn2, #actColumn4 {
     font-weight: 700;
     color:black;
     margin-bottom: 8px;
+}
+
+
+/*________________________________responsive _______ @media___________________________________________*/
+
+@media all and (max-width: 1200px) and (min-width:600px)
+{
+    /*general*/
+    body{width: auto;}
+
+    h1,h2,h3,p{color: rgb(190, 16, 54);}/*temoin*/
+
+
+
+
+  /*lodging*/
+
+#LODGING{
+/*width: auto;
+height: auto;*/
+display: block;
+/*flex-direction: column;
+justify-content: center;
+flex-wrap: wrap;*/
+}
+
+aside{
+    width: auto;
+}
+
+/*article,aside{
+    width: auto
+}*/
+
+.thisTownFigure{
+  width: 290px;  
+}
+
+.thisTownImage{
+    width: 290px;   
+}
+#thisTownLodging{
+    /*order:1;*/
+    width: 100%;
+}
+#poplodging{
+   /* order:2;*/
+    width: 80%;
+}
+
+
+#popLodgingRanking{
+    width: auto;
+    flex-direction: row;
+}
+
+#popLodgingFigure {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#popLodgingFigure figcaption {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+#popLodgingImage{
+    width: 100px;
+    
+}
+
+    /*activity*/
+
+    #activityTitle{
+        padding-left: 100px;
+    }
+
+    #activityPictures{
+    /*width: 100%;
+    justify-content: space-between;
+    padding:0;
+    margin: 0;*/
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content:space-evenly
+    }
+
+    #activityPictures img{
+        width: 420px;
+    }
+
+    #actColumn1 img, #actColumn3 img{
+        height: 160px;
+    }
+
+    #actColumn2{
+      order:1  ;
+    }
+    #actColumn4{
+        order:2  ;
+    }
+    #actColumn1{
+        order:3  ;
+    }
+    #actColumn3{
+        order:4  ;
+    }
+
+    /*#actColumn1, #actColumn2, #actColumn3, #actColumn4{
+        margin: 0px 50px;
+    }*/
+
+}
+
+
+
+
+@media all and (max-width: 700px)
+{
+    body
+    {
+        width: auto;/*utile?*/
+        min-width: 360px;
+    }
+
+
+
+    h1, h2, h3, p{/*temoin*/
+        color:rgb(38, 136, 95);
+    }
+
+
+
+        header{/*header*/
+            height:auto;
+            flex-wrap: wrap;  
+        }
+
+        #headerNav{
+            position: relative;
+        }
+    
+        
+        #headernav ul{
+   
+        }
+
+        #headernav ul li{
+  
+        }
+
+        #headerNav li a{
+            display: block;
+            margin-left: 50px;
+     width: 150px;
+     font-size: 1em;
+     font-weight: 700;
+        }
+
+  #logo{
+
+  }
+
+        #headerNav li a:hover:before{
+            content:"";
+            width: 100%;
+            height: 2px;
+            background: #0065FC;
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+        }
+
+        
+    /*----Banner Section : headline + search + filter + info ---*/
+
+/*headline*/
+
+#headline h1{
+    width: 352px;
+    margin-left: 50px;
+    font-size:1.4em ;
+    line-height: 1.2em;
+    align-self: center;
+}
+
+#headline p{
+    margin-left: 50px;
+    font-size:1em ;
+}
+
+/*search*/
+
+
+
+form #submit{
+        /*font-size: 0;*/
+    opacity:0.5;
+    background: no-repeat url("icon/search-solid.jpg");
+    position: relative;
+ }
+
+
+
+#search{
+    margin-left: 40px;
+}
+
+
+
+/*<i class="fas fa-search"></i>*/
+
+
+
+/*filter*/
+
+#filter{
+    /*font-weight: 700;
+    width: 900px;
+    height: auto;*/
+    align-items:baseline;
+    flex-direction: column;
+    /*flex-wrap: wrap; /*wrap on for filters*/
+}
+ #filter h2{
+     margin-left: 45px;
+     margin-bottom: -5px;
+ }   
+    
+.fa-ul{
+    /*flex-direction: column;*/
+    justify-content: start;
+    width: 320px;
+    flex-wrap: wrap;
+    }
+
+
+#info{
+    padding-left: 50px;
+    font-size:1.2em ;
+}
+
+
+
+/*lodging*/
+#LODGING{
+    width: auto;
+flex-direction: column;
+justify-content: center;
+}
+
+#thisTownLodging{
+    order:2;
+    width: auto;
+    margin:0;
+    padding: 0;
+    border: 1px solid red;
+}
+#popLodging{
+    order:1;
+    width: auto;
+    margin:0;
+    padding: 0;
+    border: 1px solid red;
+    justify-content: center;
+}
+
+#popLodgingRanking{
+   
+    margin:0px;
+    padding: 0;  
+    border: 1px solid violet;
+
+}
+
+
+.poplodgingFigure{
+    margin:0;
+    margin-left: 30px;
+    padding: 0;
+
+    }
+    
+
+.thisTownFigure{
+
+width: 315px;
+margin-bottom: 5px;
+}
+
+.thisTownImage{   /*750x500*/
+    width: 315px;
+    margin:0;
+    padding: 0;
+   
+    /*width: 252px;
+    height: 130px;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;*/
+    }
+
+    #thisTownTitle{
+        width: 315px;
+        margin-left: 60px;  
+        border: solid 2px red;
+    }
+
+
+/*activity*/
+
+    #ACTIVITY h2{
+        margin-left: 50px;
+    }
+
+    #activityPictures{
+        /*width: 100%;
+        justify-content: space-between;
+        padding:0;
+        margin: 0;*/
+        height: auto;
+        flex-wrap: wrap;
+    
+        justify-content:center
+   
+
+    }
+    #activityPictures figure{
+      margin-bottom: 20px; 
+   
+    }
+
+
+    #actColumn1 img, #actColumn3 img{
+        height: 160px;
+    }
+
+
+
+
+
+/*footer*/
+    #footerNav{
+        width: auto;
+        background-color: #6b2c2c;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+
+    #footerNav li a, #footerNav li p{
+        font-size: 1em;
+    }
 }
