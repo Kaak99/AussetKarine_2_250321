@@ -149,6 +149,9 @@ form #submit{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-left: -10px;
+    border:none;
+    font-weight: 700;
+
 }
 
 /*<!--filter-->*/
@@ -158,7 +161,7 @@ form #submit{
     width: 900px;
     height: auto;
     align-items: center;
-    /*flex-wrap: wrap; /*wrap on for filters*/
+    flex-wrap: wrap;
 }
 
 
@@ -170,7 +173,7 @@ form #submit{
 
 .filterItems i{
     padding: 12px 10px;
-    background-color: #F2F2F2;
+    background-color: #DEEBFF;
     color:#0065FC;
     border-radius: 50%;
     height: 18px;
@@ -238,7 +241,7 @@ aside{
 
 #thisTownTitle{
     height: 20px;
-    margin: 30px 0 0 50px;
+    padding: 30px 0 0 50px;
     }
 
 #thisTownPictures{
@@ -254,7 +257,7 @@ aside{
     padding:6px 6px 0 6px;
     border-radius: 25px;
     margin:20px 0 20px 0;
-    box-shadow: 1px 2px 10px #3f3f3f;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 20%);
     }
        
 .thisTownImage{   /*750x500*/
@@ -307,14 +310,17 @@ aside{
     justify-content: space-evenly;
 }
 
+#popLodgingRanking a{
+    margin: 20px auto;
+}
+
 .popLodgingFigure{
     background-color: white;
     width: 330px;
     padding:6px 0px 6px 6px;
     border-radius: 25px;
-    margin-left: 20px;
-    margin-top: 20px;
-    box-shadow: 1px 2px 10px #3f3f3f;
+    margin:0;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 20%);
 }  
 
 .popLodgingImage{   /*532x355*/
@@ -354,7 +360,7 @@ aside{
     margin: 0;
     background-color:white;
     border-radius: 25px;
-    box-shadow: 1px 2px 10px #3f3f3f; 
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 20%); 
 }
 
 #actColumn1 img, #actColumn3 img{
@@ -412,7 +418,7 @@ div#actColumn2, #actColumn4 {
 }
 
 #footerNav li p{
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 700;
     color:black;
     margin-bottom: 8px;
@@ -421,15 +427,18 @@ div#actColumn2, #actColumn4 {
 
 /*________________________________responsive _______ @media___________________________________________*/
 
-@media all and (max-width: 1200px) and (min-width:600px)
+@media all and (max-width: 1200px) and (min-width:700px)
 {
     /*general*/
     body{width: auto;}
 
     h1,h2,h3,p{color: rgb(190, 16, 54);}/*temoin*/
 
-
-
+/*header*/
+    header {
+        margin: 10px 0 30px 0;
+        justify-content: space-between;
+    }
 
   /*lodging*/
 
@@ -470,6 +479,10 @@ aside{
 #popLodgingRanking{
     width: auto;
     flex-direction: row;
+}
+
+#popLodgingRanking a{
+    margin:10px 14px;
 }
 
 #popLodgingFigure {
