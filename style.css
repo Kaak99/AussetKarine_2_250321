@@ -358,15 +358,15 @@ aside{
     margin: 0;
 }
 
-#activityPictures figure:hover{
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 40%); 
-}
-
-#actColumn1 figure, #actColumn2 figure, #actColumn3 figure, #actColumn4 figure{
+#activityPictures figure{
     margin: 0;
     background-color:white;
     border-radius: 25px;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 20%); 
+}
+
+#activityPictures figure:hover{
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 40%); 
 }
 
 #actColumn1 img, #actColumn3 img{
@@ -436,7 +436,7 @@ div#actColumn2, #actColumn4 {
 /*___________________________________________________________________________________________________*/
 
 
-/******************** screen from 700 to 1200px*****************/
+/***************************** screen from 700 to 1200px***************************/
 
 @media all and (max-width: 1200px) and (min-width:700px)
 {
@@ -565,14 +565,16 @@ aside{
 }
 
 
+/********************************** screen < 700px*********************************/
 
 
 @media all and (max-width: 700px)
 {
     body
     {
-        width: auto;/*utile?*/
-        min-width: 360px;
+        /*min-width: 500px;*/
+        width:100%;
+        height:auto;
     }
 
 
@@ -583,17 +585,17 @@ aside{
 
 
 
-        header{/*header*/
-            height:auto;
-            flex-wrap: wrap;  
-        }
+    header{/*header*/
+        height:auto;
+        flex-wrap: wrap;  
+    }
 
-        #headerNav{
-            position: relative;
-        }
+    #headerNav{
+        position: relative;
+    }
     
         
-        #headernav ul{
+    #headernav ul{
    
         }
 
@@ -604,16 +606,12 @@ aside{
         #headerNav li a{
             display: block;
             margin-left: 50px;
-     width: 150px;
-     font-size: 1em;
-     font-weight: 700;
+            width: 150px;
+            font-size: 1em;
+            font-weight: 700;
         }
 
-  #logo{
-
-  }
-
-        #headerNav li a:hover:before{
+    #headerNav li a:hover:before{
             content:"";
             width: 100%;
             height: 2px;
@@ -622,185 +620,246 @@ aside{
             position: absolute;
             top: 20px;
             left: 0px;
-        }
+    }
 
         
     /*----Banner Section : headline + search + filter + info ---*/
 
-/*headline*/
+    /*headline*/
 
-#headline h1{
-    width: 352px;
-    margin-left: 50px;
-    font-size:1.4em ;
-    line-height: 1.2em;
-    align-self: center;
-}
+    #headline h1{
+        width: 352px;
+        margin-left: 50px;
+        font-size:1.4em ;
+        line-height: 1.2em;
+        align-self: center;
+    }
 
-#headline p{
-    margin-left: 50px;
-    font-size:1em ;
-}
-
-/*search*/
+    #headline p{
+        margin-left: 50px;
+        font-size:1em ;
+    }
 
 
+    /*search*/
 
-form #submit{
+
+    form #submit{
         /*font-size: 0;*/
-    opacity:0.5;
-    background: no-repeat url("icon/search-solid.jpg");
-    position: relative;
- }
-
-
-
-#search{
-    margin-left: 40px;
-}
-
-
-
-/*<i class="fas fa-search"></i>*/
-
-
-
-/*filter*/
-
-#filter{
-    /*font-weight: 700;
-    width: 900px;
-    height: auto;*/
-    align-items:baseline;
-    flex-direction: column;
-    /*flex-wrap: wrap; /*wrap on for filters*/
-}
- #filter h2{
-     margin-left: 45px;
-     margin-bottom: -5px;
- }   
-    
-.fa-ul{
-    /*flex-direction: column;*/
-    justify-content: start;
-    width: 320px;
-    flex-wrap: wrap;
+        opacity:0.5;
+        background: no-repeat url("icon/search-solid.jpg");
+        position: relative;
     }
 
 
-#info{
-    padding-left: 50px;
-    font-size:1.2em ;
-}
+
+    #search{
+        margin-left: 40px;
+    }
 
 
 
-/*lodging*/
-#LODGING{
-    width: auto;
-flex-direction: column;
-justify-content: center;
-}
-
-#thisTownLodging{
-    order:2;
-    width: auto;
-    margin:0;
-    padding: 0;
-    border: 1px solid red;
-}
-#popLodging{
-    order:1;
-    width: auto;
-    margin:0;
-    padding: 0;
-    border: 1px solid red;
-    justify-content: center;
-}
-
-#popLodgingRanking{
-   
-    margin:0px;
-    padding: 0;  
-    border: 1px solid violet;
-
-}
+    /*<i class="fas fa-search"></i>*/
 
 
-.poplodgingFigure{
-    margin:0;
-    margin-left: 30px;
-    padding: 0;
+
+    /*filter*/
+
+    #filter{
+        /*font-weight: 700;
+        width: 900px;
+        height: auto;*/
+        align-items:baseline;
+        flex-direction: column;
+        /*flex-wrap: wrap; /*wrap on for filters*/
+    }
+
+    #filter h2{
+        margin-left: 45px;
+        margin-bottom: -5px;
+    }   
+
+    .filterItems{
+        margin-bottom: 10px;
+        margin-left: -20px;
 
     }
     
-
-.thisTownFigure{
-
-width: 315px;
-margin-bottom: 5px;
-}
-
-.thisTownImage{   /*750x500*/
-    width: 315px;
-    margin:0;
-    padding: 0;
-   
-    /*width: 252px;
-    height: 130px;
-    object-fit:cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;*/
+    .fa-ul{
+        /*flex-direction: column;*/
+        justify-content: start;
+        width: 350px;
+        flex-wrap: wrap;
     }
+
+    .filterItems i{
+        font-size: 1.2em;   
+        padding: 14px 12px;
+ 
+        height: 20px;
+        width: 24px;
+        text-align: center;
+    }
+    
+    .filterTxt{
+       
+        border: 2px solid #F2F2F2;
+        padding: 14px 20px 11px 28px;
+        border-left: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-left: -17px;
+        margin-right: 30px;
+    }
+
+
+    /*info*/
+    #info{
+        padding-left: 20px;
+        font-size:1.2em ;
+
+    }
+
+    .fa-info{
+        margin-right: 15px;
+        padding: 5px 9px;
+        margin-bottom: 14px;
+    }
+
+    /*lodging*/
+    #LODGING{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #thisTownLodging{
+        order:2;
+        width: auto;
+        margin:0;
+        padding: 0;
+    }
+
+
+
+    #popLodging{
+        order:1;
+        width: auto;
+        margin: 0;
+        padding:0 0 30px 0;
+        justify-content: center;
+        border-radius: 0px;
+    }
+
+    /*popular lodging*/
+    #popLodgingTitle{
+        font-size: 1.3em;
+        margin-left: 18px;
+    }
+
+    .fa-chart-line{
+        right: 15px;
+    }
+
+    #popLodgingRanking{
+        height: auto;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    #popLodgingRanking a{
+         padding: 0; 
+        margin: 8px; 
+    }
+
+    .poplodgingFigure{
+        margin:0;
+        margin-left: 30px;
+        padding: 0;
+    }
+    
+    /*lodging in this town*/
+
+    #thisTownLodging{
+        background-color: white;
+    }
+
 
     #thisTownTitle{
-        width: 315px;
-        margin-left: 60px;  
-        border: solid 2px red;
+        display: block;
+        height: auto;
+        margin: 0;
+        padding:25px 0 5px 18px;
+        font-size: 1.4em; 
+    }
+
+    #thisTownPictures a {
+        margin: 8px;
+    }
+
+    .thisTownFigure{
+        width: 330px;
+        margin-bottom: 0px;
+    }
+
+    .thisTownImage{   /*750x500*/
+        width: 330px;
+        height: 120px;
+        margin:0;
+        padding: 0;
+    }
+
+    #thisTownMore{
+        font-size: 1.2em;
+        margin-left: 22px;
     }
 
 
-/*activity*/
+    /*activity*/
 
     #ACTIVITY h2{
-        margin-left: 50px;
+        font-size: 1.4em;
+        margin-left: 24px;
+        margin-bottom: 30px;
     }
 
     #activityPictures{
-        /*width: 100%;
-        justify-content: space-between;
-        padding:0;
-        margin: 0;*/
         height: auto;
         flex-wrap: wrap;
-    
         justify-content:center
-   
-
     }
+
     #activityPictures figure{
-      margin-bottom: 20px; 
-   
+        margin-bottom: 20px; 
     }
 
-
-    #actColumn1 img, #actColumn3 img{
-        height: 160px;
+    #activityPictures img{
+        height: 140px;
+        width: 340px;
     }
 
+    #activityPictures figcaption{
+        padding:14px 20px 16px 20px;
+    }
 
+    /*footer*/
 
-
-
-/*footer*/
     #footerNav{
         width: auto;
-        background-color: #6b2c2c;
         flex-wrap: wrap;
         padding-left: 20px;
     }
 
-    #footerNav li a, #footerNav li p{
-        font-size: 1em;
+    #footerNav li p{
+        font-size: 1.2em;
+        line-height: 1.8em;
     }
+
+    #footerNav li a{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+
+
 }
