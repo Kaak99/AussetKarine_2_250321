@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 
-.d-flex{display: flex;}
+.d-flex { display: flex; }
+.fw400 { font-weight: 400; }
+.fw700 { font-weight: 700; }
 
 li{list-style: none;}
 
@@ -38,6 +40,7 @@ p{
     font-weight: 400;
 }
 
+
 /* <!---------------------------- BODY ----------------------------> */
 
 body{
@@ -51,8 +54,6 @@ body{
 /* <!----------------HEADER----------------> */
 
 header{
-    /*margin:0px 0 0px 0;
-    padding: 0;*/
     height: 70px;
     justify-content: space-between;
 }
@@ -61,55 +62,31 @@ header{
     align-self:flex-end;
 }
 
-#headerNav{
-    /*width: 350px;*/
-    /*padding: 0;
-    margin: 0;*/
-    /*align-self:flex-start;*/
-}
-
 #headerNav ul{
-    /*justify-content: space-between;*/
-    /*height: 100%;*/
     padding: 0;
     margin: 0;
 }
 
-
 #headerNav li{
-    /*height: 100%;*/
     padding: 30px 30px;
-    /*margin: 0;*/
 }
 
 #headerNav li a{
     font-size: 0.9em;
-    font-weight: 400;
 }
 
-
 #suscribe a{
-   font-weight: 700;
    color:#0065FC;
 }
 
-#suscribe a:hover{
-    font-weight: 700;
- }
-
-
 #headerNav li:not(:last-child):hover{
-/*#headerNav li:not(:last-child):hover{*/
-/*#headerNav li:nth-child(1) a:hover, #headerNav li:nth-child(2) a:hover{*/
     border-top: 3px solid #0065FC;
 }
-
 
 #headerNav li:not(:last-child) a:hover{
         color:#0065FC;
         font-weight: 700;
-    }
-
+}
 
 
 /* <!----------------MAIN----------------> */
@@ -135,22 +112,13 @@ header{
     border-style:none;
 }
 
-/*#search form{
-    align-items:baseline;
-}*/
-
 #search form #input{
     height: 40px; 
     margin-right: 0px;
-    font-weight: 700;
     border-style: solid;
     border-color: #F2F2F2;
     padding-left: 10px;
 }
-
-/*#search form input:focus{
-    outline:  none;
-}*/
 
 #search form #submit{
     background-color:#0065FC;
@@ -161,29 +129,11 @@ header{
     border-bottom-right-radius: 10px;
     margin-left: -10px;
     border:none;
-    font-weight: 700;
-/*opacity:0.2;*/
-
 }
-
 
 #search form #submit2{
-
     display:none;
-
-
 }
-
-/*
-.fa-search{
-    color:white;
-    background-color:#0065FC;
-    left:-96px;
-    padding: 11px;
-    border-radius:  10px;
-    border-style:none;
-   position: relative; 
-}*/
 
 
 /*<!--filter-->*/
@@ -432,8 +382,6 @@ div#actColumn2, #actColumn4 {
 }
 
 
-
-
 /*<!------------------------------ FOOTER -------------------------------->*/
 
 #footerNav{
@@ -443,7 +391,7 @@ div#actColumn2, #actColumn4 {
 }
 
 #footerNav ul{
-    width: 500px;
+    width: 100%;
     padding-left:20px;
 }
 
@@ -453,14 +401,10 @@ div#actColumn2, #actColumn4 {
 
 #footerNav li a{
     font-size: 0.8em;
-    font-weight: 400;
-    color:black;
 }
 
 #footerNav li p{
     font-size: 1em;
-    font-weight: 700;
-    color:black;
     margin-bottom: 8px;
 }
 
@@ -476,8 +420,7 @@ div#actColumn2, #actColumn4 {
 {
     /*general*/
     body{width: auto;}
-
-    h1,h2,h3,p{color: rgb(190, 16, 54);}/*temoin*/
+    /*h1,h2,h3,p{color: rgb(190, 16, 54);}temoin1200*/
 
     /*header*/
    
@@ -493,18 +436,14 @@ div#actColumn2, #actColumn4 {
     }
 
     #thisTownLodging{
-        /*order:2;*/
         width: 100%;
     }
 
     #popLodging{
-        /*order:1;*/
         width: 100%;
         background-color: #DEEBFF;
         margin-top: 20px;
     }
-
-
 
     #popLodgingRanking{
         flex-direction: row;
@@ -548,15 +487,10 @@ div#actColumn2, #actColumn4 {
     }
 
     #activityPictures{
-    /*width: 100%;
-    justify-content: space-between;
-    padding:0;
-    margin: 0;*/
         height: auto;
         width: auto;
         flex-wrap: wrap;
         justify-content:space-evenly;
-       /*align-content: space-between;*/
     }
 
     #activityPictures figure{
@@ -569,17 +503,12 @@ div#actColumn2, #actColumn4 {
 
     #actColumn1 img, #actColumn3 img{
         height: 160px;
-              
     }
 
     #actColumn2 { order:1; }
     #actColumn4 { order:2; }
     #actColumn1 { order:3; }
     #actColumn3 { order:4; }
-
-    /*#actColumn1, #actColumn2, #actColumn3, #actColumn4{
-        margin: 0px 50px;
-    }*/
 
 }
 
@@ -591,30 +520,21 @@ div#actColumn2, #actColumn4 {
 {
     body
     {
-        /*min-width: 500px;*/
         width:100%;
         height:auto;
     }
 
+    /*h1, h2, h3, p{color:rgb(38, 136, 95);}temoin700*/
 
-
-    h1, h2, h3, p{/*temoin*/
-        color:rgb(38, 136, 95);
-    }
-/*header*/
-
-
+    /*header*/
 
     header{
         height:auto;
         flex-wrap: wrap;  
         font-size: 1.2em;
     }
-
-
    
     header #logo{
-        /*margin-right: 200px;*/
         margin-left: 20px;
         margin-top: 20px;
         position: relative;
@@ -623,72 +543,35 @@ div#actColumn2, #actColumn4 {
 
     #suscribe {
         position: absolute;
-        left:70%; 
+        left:65%; 
         top:5px;
      }
 
-     /*#suscribe a{*/
-     #headernav li:nth-child(3) a{
-        font-weight: 700!important ;
-     }
-
-     #headerNav{
+    #headerNav{
         width: 100%;
-        /*justify-self: center;*/
-         /*justify-content:space-evenly;*/
-        } 
-
+    } 
 
     #headerNav ul{
         border-bottom: 2px solid #F2F2F2;
-         width: 100%;
-         /*justify-self: center;*/
-          
-         /*flex-direction: row;*/
-        /* justify-content:space-between;*/
+        width: 100%;
         justify-content:space-evenly;
-        /*justify-content:center;*/
-        /*
-        flex-direction: row;
-        */
-       
-          }   
+    }   
 
          
-          #headernav ul li:not(:last-child){
-             width: 50% ;
-             border-top: none;
-             text-align: center; 
-             border-bottom: 3px solid #0065FC;
-       
-          }
+    #headernav ul li:not(:last-child){
+        width: 50% ;
+        border-top: none;
+        text-align: center; 
+        border-bottom: 3px solid #0065FC;
+    }
          
 
-          #headerNav li:not(:last-child):hover{
-          border-top: none;
-          border-bottom: 3px solid #0065FC;
-        }
-
-
-
-
-      
-            /*#headerNav li:nth-child(1) a:hover, #headerNav li:nth-child(2) a:hover{*/
-
-
-/*                #headerNav li:not(:last-child) a:hover{         
-         border-top: none;
-
+    #headerNav li:not(:last-child):hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
     }
 
-    
-    #headerNav li:not(:last-child):hover{         
-       border-bottom: 3px solid #0065FC;
-    }*/
-
-
-
-        
+       
     /*----Banner Section : headline + search + filter + info ---*/
 
     /*headline*/
@@ -702,13 +585,11 @@ div#actColumn2, #actColumn4 {
     }
 
     #headline p{
-        margin-left: 50px;
+        margin-left: 22px;
         font-size:1em ;
     }
 
-
     /*search*/
-
 
     #search{
         margin-left: 20px;
@@ -720,14 +601,13 @@ div#actColumn2, #actColumn4 {
    
     #search form #input{
         height: 52px; 
-        width: 240px;
+        width: 205px;
         font-size: 1em;
     }
 
     #search form #submit{
         display: none;
     }
-
 
     #search form #submit2{
         display:inline-block;
@@ -739,7 +619,6 @@ div#actColumn2, #actColumn4 {
         border:none;
         margin: 0px 0px -20px -10px;
     }
-
    
     /*filter*/
 
@@ -761,23 +640,20 @@ div#actColumn2, #actColumn4 {
     }
     
     .fa-ul{
-        /*flex-direction: column;*/
         justify-content: start;
-        width: 350px;
+        width: 340px;
         flex-wrap: wrap;
     }
 
     .filterItems i{
         font-size: 1.2em;   
         padding: 14px 12px;
- 
         height: 20px;
         width: 24px;
         text-align: center;
     }
     
     .filterTxt{
-       
         border: 2px solid #F2F2F2;
         padding: 14px 20px 11px 28px;
         border-left: none;
@@ -787,12 +663,11 @@ div#actColumn2, #actColumn4 {
         margin-right: 30px;
     }
 
-
     /*info*/
+
     #info{
         padding-left: 20px;
         font-size:1.2em ;
-
     }
 
     .fa-info{
@@ -802,6 +677,7 @@ div#actColumn2, #actColumn4 {
     }
 
     /*lodging*/
+
     #LODGING{
         width: auto;
         flex-direction: column;
@@ -814,8 +690,6 @@ div#actColumn2, #actColumn4 {
         margin:0;
         padding: 0;
     }
-
-
 
     #popLodging{
         order:1;
