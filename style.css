@@ -543,7 +543,7 @@ div#actColumn2, #actColumn4 {
 
     #suscribe {
         position: absolute;
-        left:65%; 
+        left:50%; 
         top:5px;
      }
 
@@ -557,13 +557,22 @@ div#actColumn2, #actColumn4 {
         justify-content:space-evenly;
     }   
 
+    #headerNav ul li{
+        width: 50% ;
+        text-align: center; 
+    }
+
+    /*#headerNav ul li:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }*/
          
-    #headernav ul li:not(:last-child){
+    /*#headernav ul li:not(:last-child){
         width: 50% ;
         border-top: none;
         text-align: center; 
         border-bottom: 3px solid #0065FC;
-    }
+    }*/
          
 
     #headerNav li:not(:last-child):hover{
