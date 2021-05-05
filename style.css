@@ -173,7 +173,9 @@ header{
 
 .filterItems a:hover{
     color: #0065FC ;
-    font-size: 1.1em;
+}
+.filterItems:hover{
+    transform: scale(1.05);
 }
 
 /*<!--info-->*/
@@ -561,19 +563,6 @@ div#actColumn2, #actColumn4 {
         width: 50% ;
         text-align: center; 
     }
-
-    /*#headerNav ul li:hover{
-        border-top: none;
-        border-bottom: 3px solid #0065FC;
-    }*/
-         
-    /*#headernav ul li:not(:last-child){
-        width: 50% ;
-        border-top: none;
-        text-align: center; 
-        border-bottom: 3px solid #0065FC;
-    }*/
-         
 
     #headerNav li:not(:last-child):hover{
         border-top: none;
