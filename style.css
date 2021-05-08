@@ -562,7 +562,10 @@ div#actColumn2, #actColumn4 {
     #headerNav ul li{
         width: 50% ;
         text-align: center; 
+        padding-left: 0;
+        padding-right: 0;
     }
+
 
     #headerNav li:not(:last-child):hover{
         border-top: none;
