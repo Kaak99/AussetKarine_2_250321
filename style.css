@@ -149,6 +149,8 @@ header{
 .fa-ul{
     display: flex;
     justify-content: space-between;
+    width: auto;
+    flex-wrap: wrap;
 }
 
 .filterItems i{
@@ -810,6 +812,49 @@ div#actColumn2, #actColumn4 {
         line-height: 1.5em;
     }
 
+}
+
+/********************************** screen < 370px*********************************/
+
+
+@media all and (max-width: 370px){
+
+    .fa-ul{
+        width: 240px;
+    }
+
+    #search {
+        margin-left: 10px;
+    }
+
+    #search form #input {
+        width: 180px;
+    }
+
+    #popLodgingRanking figure figcaption {
+        padding-left: 15px;
+        width: 150px;
+    }
+
+    .popLodgingFigure{
+        width: 280px;
+    }
+
+    .thisTownImage{
+        width: 280px;
+    }
+
+    .thisTownFigure{
+        width: 280px;
+    }
+
+    #activityPictures figure {
+        width: 280px;
+    }
+
+    #activityPictures img {
+        width: 280px;
+    }
 
 
 }
