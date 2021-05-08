@@ -140,7 +140,7 @@ header{
 
 #filter{
     font-weight: 700;
-    width: 900px;
+    /*width: 900px;*/
     height: auto;
     align-items: center;
     flex-wrap: wrap;
