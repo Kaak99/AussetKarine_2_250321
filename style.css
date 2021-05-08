@@ -578,7 +578,7 @@ div#actColumn2, #actColumn4 {
     /*headline*/
 
     #headline h1{
-        width: 352px;
+        /*width: 352px;*/
         margin-left: 22px;
         font-size:1.4em ;
         line-height: 1.2em;
@@ -642,7 +642,7 @@ div#actColumn2, #actColumn4 {
     
     .fa-ul{
         justify-content: start;
-        width: 340px;
+        width: 334px;
         flex-wrap: wrap;
     }
 
@@ -656,7 +656,7 @@ div#actColumn2, #actColumn4 {
     
     .filterTxt{
         border: 2px solid #F2F2F2;
-        padding: 14px 20px 11px 28px;
+        padding: 14px 14px 11px 26px;
         border-left: none;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
